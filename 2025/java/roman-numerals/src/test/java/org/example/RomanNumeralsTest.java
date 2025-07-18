@@ -13,4 +13,10 @@ public class RomanNumeralsTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void shouldReturnIIIfor3() {
+        String expected = "III";
+        String actual = RomanNumerals.fromDecimal(3);
+        assertEquals(expected, actual);
+    }
 }
