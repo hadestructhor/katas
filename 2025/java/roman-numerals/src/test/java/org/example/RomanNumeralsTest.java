@@ -47,4 +47,11 @@ public class RomanNumeralsTest {
         String actual = RomanNumerals.fromDecimal(9);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldReturnXfor10() {
+        String expected = "X";
+        String actual = RomanNumerals.fromDecimal(10);
+        assertEquals(expected, actual);
+    }
 }
