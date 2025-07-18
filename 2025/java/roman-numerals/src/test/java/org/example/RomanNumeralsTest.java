@@ -19,4 +19,12 @@ public class RomanNumeralsTest {
         String actual = RomanNumerals.fromDecimal(3);
         assertEquals(expected, actual);
     }
+
+
+    @Test
+    void shouldReturnIVfor4() {
+        String expected = "IV";
+        String actual = RomanNumerals.fromDecimal(4);
+        assertEquals(expected, actual);
+    }
 }
