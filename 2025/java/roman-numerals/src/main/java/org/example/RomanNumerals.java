@@ -11,6 +11,6 @@ public class RomanNumerals {
         if(number < 9) {
             return RomanLetter.V.getRepresentation() + RomanLetter.I.getRepresentation().repeat(number - RomanLetter.V.getNumberRepresentation());
         }
-        return null;
+        return RomanLetter.I.getRepresentation() + RomanLetter.X.getRepresentation();
     }
 }
