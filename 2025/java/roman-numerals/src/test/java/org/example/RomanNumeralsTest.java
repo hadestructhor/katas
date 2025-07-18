@@ -54,4 +54,32 @@ public class RomanNumeralsTest {
         String actual = RomanNumerals.fromDecimal(10);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldReturnXIIIfor13() {
+        String expected = "XIII";
+        String actual = RomanNumerals.fromDecimal(13);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnXIVfor14() {
+        String expected = "XIV";
+        String actual = RomanNumerals.fromDecimal(14);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnXVIIIfor18() {
+        String expected = "XVIII";
+        String actual = RomanNumerals.fromDecimal(18);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnXIXfor19() {
+        String expected = "XIX";
+        String actual = RomanNumerals.fromDecimal(19);
+        assertEquals(expected, actual);
+    }
 }
