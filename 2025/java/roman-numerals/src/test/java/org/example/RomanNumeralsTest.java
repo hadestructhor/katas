@@ -33,4 +33,11 @@ public class RomanNumeralsTest {
         String actual = RomanNumerals.fromDecimal(5);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldReturnVIIIfor8() {
+        String expected = "VIII";
+        String actual = RomanNumerals.fromDecimal(8);
+        assertEquals(expected, actual);
+    }
 }
