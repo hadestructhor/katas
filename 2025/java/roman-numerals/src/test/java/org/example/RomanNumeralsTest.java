@@ -20,11 +20,17 @@ public class RomanNumeralsTest {
         assertEquals(expected, actual);
     }
 
-
     @Test
     void shouldReturnIVfor4() {
         String expected = "IV";
         String actual = RomanNumerals.fromDecimal(4);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnVfor5() {
+        String expected = "V";
+        String actual = RomanNumerals.fromDecimal(5);
         assertEquals(expected, actual);
     }
 }
