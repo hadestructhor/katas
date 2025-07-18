@@ -1,13 +1,19 @@
 package org.example;
 
 public enum RomanLetter {
-    I("I"),
-    V("V")
+    I("I", 3),
+    V("V", 5)
     ;
     private final String representation;
+    private final int numberRepresentation;
 
-    RomanLetter(String representation) {
+    public int getNumberRepresentation() {
+        return numberRepresentation;
+    }
+
+    RomanLetter(String representation, int numberRepresentation) {
         this.representation = representation;
+        this.numberRepresentation = numberRepresentation;
     }
 
     public String getRepresentation() {
