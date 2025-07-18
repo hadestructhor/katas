@@ -2,6 +2,20 @@ package org.example;
 
 public class RomanNumerals {
     public static String fromDecimal(int number) {
+        int singleDigit = number % 10;
+        int doubleDigits = number / 10;
+        return getDoubleDigitsRepresentation(doubleDigits) +
+                getSingleDigitRepresentation(singleDigit);
+    }
+
+    private static String getDoubleDigitsRepresentation(int number) {
+        if(number == 0) {
+            return "";
+        }
+        return RomanLetter.X.getRepresentation();
+    }
+
+    private static String getSingleDigitRepresentation(int number) {
         if(number <= 3) {
             return RomanLetter.I.getRepresentation().repeat(number);
         }
