@@ -1,7 +1,8 @@
 package org.example;
 
 public enum RomanLetter {
-    I("I")
+    I("I"),
+    V("V")
     ;
     private final String representation;
 
